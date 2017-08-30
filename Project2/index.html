@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn jQuery</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        .red{color:red;}
+        .green{color:green;}
+
+    </style>
+    <script>
+        $(document).ready(function() {
+     /*       $('.myLink').on('click', function() {
+                $('h1').fadeToggle(500);
+            });
+
+        });*/
+         $('.myLink').click(function() {
+             $('h1').replaceWith('<h3>Hello World</h3>');
+
+         });
+     });
+    </script>
+</head>
+<body>
+    <h1>Welcome Everyone</h1>
+    <a href="#" class="myLink">Click Here</a>
+
+</body>
+</html>
